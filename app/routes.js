@@ -16,12 +16,12 @@ import Games from './components/news';
 const AppStack = createBottomTabNavigator({
   News:News,
   Games:Games
-},{
-  headerMode: 'none'
 });
 
 const AuthStack = createStackNavigator({
   SignIN:SignIN
+},{
+  headerMode: 'none'
 });
 
 export const RootNavigator = () => {
