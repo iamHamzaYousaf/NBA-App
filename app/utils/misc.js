@@ -1,6 +1,4 @@
-import {
-    AsyncStorage
-} from 'react-native';
+import AsyncStorage from '@react-native-community/async-storage';
 
 export const FIREBASEURL = `https://nba-app-98895.firebaseio.com`;
 export const APIKEY = `AIzaSyCaC8vWWlw-ZT4Cfm5Yz2Bq4e-UWkBszuk`;
@@ -10,7 +8,7 @@ export const REFRESH = `https://securetoken.googleapis.com/v1/token?key=${APIKEY
 
 
 export const getTokens = (cb) => {
-
+    AsyncStorage.clear();
     AsyncStorage.multiGet([
         '@nba_app@token',
         '@nba_app@refreshToken',

@@ -1,23 +1,19 @@
-import React, {Component} from 'react';
-import { View, Image, StyleSheet } from 'react-native';
+import React from 'react';
+import { View, Image } from 'react-native';
 
- class AuthComponent extends Component{
-  render() {
-    return (
-      <View style={styles.container}>
-       <Image
-          source
-       />
-      </View>
-    );
-  }
-}
+import LogoImage from '../../assets/images/nba_login_logo.png';
 
-export default AuthComponent;
+const LogoComponent = () => (
+    <View style={{alignItems:'center'}}>
+        <Image
+            source={LogoImage}
+            resizeMode={'center'}
+            style={{
+                width:170,
+                height:150
+            }}
+        />
+    </View>
+)
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  }
-});
+export default LogoComponent;
