@@ -1,19 +1,17 @@
 import React, {Component} from 'react';
-import { View, Image, StyleSheet } from 'react-native';
+import { Platform, StyleSheet, Text, View } from 'react-native';
 
- class AuthComponent extends Component{
+ class GameArticleComponent extends Component{
   render() {
     return (
       <View style={styles.container}>
-       <Image
-          source
-       />
+        <Text>Hello i am the AUTH LOGIN </Text>
       </View>
     );
   }
 }
 
-export default AuthComponent;
+export default GameArticleComponent;
 
 const styles = StyleSheet.create({
   container: {
