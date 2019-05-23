@@ -8,7 +8,7 @@ export const REFRESH = `https://securetoken.googleapis.com/v1/token?key=${APIKEY
 
 
 export const getTokens = (cb) => {
-    AsyncStorage.clear();
+    // AsyncStorage.clear();
     AsyncStorage.multiGet([
         '@nba_app@token',
         '@nba_app@refreshToken',
